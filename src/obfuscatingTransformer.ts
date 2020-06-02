@@ -47,10 +47,10 @@ export function obfuscatingTransformer({
   const callerFilename = getCallerFile()
 
   const obfuscatorOptions: JavaScriptObfuscator.Options = {
-    ..._obfuscatorOptions,
     sourceMap: true,
     sourceMapMode: "separate",
     stringArray: false,
+    ..._obfuscatorOptions,
   }
 
   return {
